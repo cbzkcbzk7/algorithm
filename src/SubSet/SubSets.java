@@ -29,7 +29,7 @@ public class SubSets {
     //     - (비트로 표현된 집합) | (1<<i)
     // 3. i번째 원소를 삭제
     //     - (비트로 표현된 집합) & ~(1<<i)
-    static void printSubsets(char[g] arr, int n){
+    static void printSubsets(char[] arr, int n){
         for(int i = 0; i < (1 << n); ++i){
             System.out.print("{ ");
             for(int j = 0; j < n; ++j){

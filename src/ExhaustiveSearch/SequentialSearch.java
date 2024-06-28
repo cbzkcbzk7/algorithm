@@ -21,8 +21,13 @@ public class SequentialSearch {
     static int[] Nums = { 1, 2, 3, 4};
 
     static int solve(int cnt, int used, int val){
-        int ret = 0;
+        if (cnt == 2) return val;  // base case : 선택된 수가 2개면 결과 반환
 
+        int ret = 0;
+        for(int i = 0; i < N; ++i){ // 모든 경우를 전부 시도
+            if((used & 1 << i) != 0) continue;
+            ret = Math.max(ret, solve(cnt + 1, used | 1 << i, val * 10 + Nums[i]));
+        }
         return ret;
     }
 
