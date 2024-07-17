@@ -20,6 +20,7 @@ public class lessons42586 {
 
         int[] result =  solution2(new int[]{95, 90, 99, 99, 80, 99},new int[]{1, 1, 1, 1, 1, 1});
         System.out.println("Arrays.toString(result) = " + Arrays.toString(result));
+
     }
     public static int[] solution(int[] progresses, int[] speeds) {
          int[] answer = {};

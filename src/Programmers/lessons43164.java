@@ -31,7 +31,7 @@ public class lessons43164 {
         allRoute = new ArrayList<>();
 
         dfs("ICN","ICN",tickets, cnt);
-
+        System.out.println(allRoute);
         Collections.sort(allRoute);
         answer = allRoute.get(0).split(" ");
 
