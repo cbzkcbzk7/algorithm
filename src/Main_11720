@@ -1,0 +1,25 @@
+import java.io.*;
+
+public class Main_11720{
+    public static void main(String[] args) throws IOException{
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        //1.숫자의 개수
+        int N = Integer.parseInt(br.readLine());
+        String strNum = br.readLine();
+        
+        //2.숫자N개가 공백없이 주어짐
+        if(N < strNum.length() || strNum.length() < N) return;
+        
+        //3. 2번의 합
+        String[] nums = strNum.trim().split("");
+        int sum = 0;
+                
+        for(int i = 0 ; i < nums.length; ++i){
+            sum += Integer.parseInt(nums[i]);
+        }
+        
+        System.out.println(sum);
+        
+    }
+}
+
