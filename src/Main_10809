@@ -1,0 +1,22 @@
+import java.io.*;
+
+public class Main_10809{
+    public static void main(String[] args) throws IOException{
+        // 1. 알파벳 s를 입력받는다.
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        String alph = br.readLine();
+ 
+        // 3. 알파벳이 단어에 포함되어 있지 않으면 -1
+        // 4. 알파벳을 추가한다.
+
+            // 5. 포함되어있으면 위치를 출력한다. 단어의 첫 번째 글자는 0, 
+            //    두번재는 1위치
+            for(char i = 'a' ; i <= 'z'; ++i){
+                // String.indexOf(str); 
+                // 해당 문자 위치(index)를 리턴하고 없으면 -1
+                System.out.print(alph.indexOf(i) + " ");
+            }
+        // 6. 공백으로 구분해서 출력한다.  
+    }
+}
+
