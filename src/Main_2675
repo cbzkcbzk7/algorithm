@@ -1,0 +1,28 @@
+import java.io.*;
+
+public class Main_2675{
+    public static void main(String[] args) throws IOException{
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+        int amount = Integer.parseInt(br.readLine());
+        
+        for(int i = 0; i < amount; ++i){
+            String[] repeatAndStrArr = br.readLine().split(""); // 공백은 처리하지 않음
+            int repeat = Integer.parseInt(repeatAndStrArr[0]);
+                for(int k = 2; k < repeatAndStrArr.length; ++k){
+                    
+                   for(int j = 0; j <repeat; ++j){
+                    bw.write(repeatAndStrArr[k]);     
+                }
+                    
+            }
+          
+           bw.newLine();
+        }
+        
+        bw.flush();
+        br.close();
+        bw.close();
+        
+    }
+}
