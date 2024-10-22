@@ -1,0 +1,45 @@
+import java.io.*;
+
+public class Main_2444{
+     public static void main(String[] args) throws IOException{
+
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
+        final int N = Integer.parseInt(br.readLine());
+
+        for(int j = N; j >  0; --j){
+                  for(int i = 1; i <= N; ++i ) {
+                      if (j <= i) {
+                          System.out.print("*");
+                      } else {
+                          System.out.print(" ");
+                      }
+                  }
+
+                  for(int i = N-1; i >= 0; --i ) {
+                      if (j <= i) {
+                          System.out.print("*");
+                      }
+                  }
+                  System.out.println();
+              }
+
+              for(int j = N-1; j >  0; --j){
+                  for(int i = N-1; i >= 0; --i ){
+                      if(j > i){
+                          System.out.print("*");
+                      }else{
+                          System.out.print(" ");
+                      }
+                  }
+
+
+                  for(int i = j-1; i > 0; --i ) {
+                      if (j >= i) {
+                          System.out.print("*");
+                      }
+                  }
+                  System.out.println();
+              }
+           }
+}
