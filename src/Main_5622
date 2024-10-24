@@ -30,15 +30,15 @@ public class Main_5622 {
     */
 
 
-       String[] alphavetArr = new String[]{"ABC", "DEF", "GHI", "JKL", "MNO", "PQRS", "TUV", "WXYZ"};
+       String[] alphabetArr = new String[]{"ABC", "DEF", "GHI", "JKL", "MNO", "PQRS", "TUV", "WXYZ"};
 
        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
        char[] inputStr = br.readLine().toCharArray();
 
        int sec = 0;
        for(char rememberChar : inputStr){
-           for(int i = 0; i < alphavetArr.length; ++i){
-               if(alphavetArr[i].indexOf(rememberChar) != -1){
+           for(int i = 0; i < alphabetArr.length; ++i){
+               if(alphabetArr[i].indexOf(rememberChar) != -1){
                     sec+=3+i;
                }
            }
